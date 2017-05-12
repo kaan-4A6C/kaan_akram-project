@@ -1,5 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+html, body {
+  margin: 0;
+}
+
+nav, ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .top {
-  height: 60px;
+  height: 100px;
   border: 3px double;
   width: 100%;
+  margin-bottom: 70px;
+}
+
+.logo {
+  font-weight: 700;
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 60px;
+  width: 80px;
+}
+
+.title {
+  margin-top: -20px;
+  padding-right: 30px;
+  float: right;
+}
+
+.content {
+  width: 88%;
+  height: 400px;
+  border: 1px solid;
+  margin: auto;
 }
