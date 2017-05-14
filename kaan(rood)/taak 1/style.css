@@ -38,4 +38,5 @@ nav, ul, li, a {
   height: 400px;
   border: 1px solid;
   margin: auto;
+  overflow-x: auto;
 }
