@@ -1,0 +1,41 @@
+DROP TABLE IF EXIST Opdrachten_1;
+CREATE TABLE Opdrachten_1
+(
+	Opdrachtnummer INT UNIQUE NOT NULL AUTO_INCREMENT,
+	Werkinstructie VARCHAR(500) NOT NULL,
+	Datum_Uitvoering DATETIME NOT NULL,
+	Kabelleverancier VARCHAR(250) NOT NULL,
+	Waarnemingen VARCHAR(500) NOT NULL,
+	Handtekeningen VARCHAR(256) NOT NULL,
+	Aantal_Bedrijfsuren INT NULL,
+	Afleg_Redenen VARCHAR(500) NOT NULL
+);
+
+DROP TABLE IF EXISTS Kabelchecklisten_3;
+CREATE TABLE Kabelchecklisten_3
+(
+	Opdrachtnummer INT NOT NULL,
+	KabelID INT NOT NULL,
+	Breuk_6D INT NOT NULL,
+	Breuk_30D INT NOT NULL,
+	Beschadiging_Buitenzijde INT NOT NULL,
+	Beschadiging_Roest_Corrosie INT NOT NULL,
+	Verminderde_Kabeldiameter INT NOT NULL,
+	Positie_Meetpunten INT NOT NULL,
+	Beschadiging_Totaal INT NOT NULL,
+	Type_Beschadiging_Roestvorming INT NOT NULL
+);
+
+INSERT INTO Opdrachten_1 (Werkinstructie,Datum_Uitvoering,Kabelleverancier,Waarnemingen,Handtekeningen,Aantal_Bedrijfsuren,Afleg_Redenen) 
+VALUES
+("Werkinstructie 1",CURRENT_TIMESTAMP ,"Leverancier1", "Waarneming 1", "Handtekening1", 11, "Aflegreden 1"),
+("Werkinstructie 2",CURRENT_TIMESTAMP ,"Leverancier2", "Waarneming 2", "Handtekening2", 22, "Aflegreden 2"),
+("Werkinstructie 3",CURRENT_TIMESTAMP ,"Leverancier3", "Waarneming 3", "Handtekening3", 33, "Aflegreden 3"),
+("Werkinstructie 4",CURRENT_TIMESTAMP ,"Leverancier4", "Waarneming 4", "Handtekening4", 44, "Aflegreden 4");
+
+
+INSERT INTO Kabelchecklisten_3 VALUES
+(0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+(2, 2, 2, 2, 2, 2, 2, 2, 2, 2),
+(3, 3, 3, 3, 3, 3, 3, 3, 3, 3);
