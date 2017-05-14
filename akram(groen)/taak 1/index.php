@@ -1,4 +1,3 @@
-<?php include 'kabel.php'; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,7 +42,7 @@
               echo "<th></th><th>opdrachtnummer</th><th>volgnummer</th><th>Datum_Opgesteld</th><th>Hoofdgiek_Lengte</th><th>Mecht_Sectie_Gieklengte</th><th>Hulpgiek_Giekhoek</th><th>Zwenkhoek</th><th>Eigen_Massa_Ballast</th><th>Toelaatbare_Bedrijfslast</th><th>LMB_In_Werking</th><th>Proeflast</th><th>Akoord<th>";
               while($row = mysqli_fetch_assoc($result)) {
                   echo "<tr><td> " . $row["opdrachtnummer"]. "</td><td> " . $row["KabelID"]. "</td><td>" . $row["Breuk_6D"]."</td><td>". $row["Breuk_30D"]."</td><td> ". $row["Beschadiging_Buitenzijde"]."</td><td>". $row["Beschadiging_Roest_Corrosie"]."</td><td>". $row["Verminderde_Kabeldiameter"].
-                  "</td><td>". $row["Positie_Meetpunten"]."</td><td>". $row["Beschadiging_Totaal"]."</td><td>". $row["Type_Beschadiging_Roestvorming"];
+                  "</td><td>". $row["Positie_Meetpunten"]."</td><td>". $row["Beschadiging_Totaal"]."</td><td>". $row["Type_Beschadiging_Roestvorming"]."</td></tr>";
               }
               } else {
                   echo "0 results";
