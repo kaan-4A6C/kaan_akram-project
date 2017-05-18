@@ -54,4 +54,5 @@
     }
     // selecteert alles van de table
     $selectedOpdrachten = getOpdrachten("SELECT * FROM Hijstesten_2");
+
 ?>
