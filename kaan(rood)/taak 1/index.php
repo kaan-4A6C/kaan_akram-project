@@ -5,15 +5,22 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
         <title>Over de RHEIN</title>
+        <link rel="stylesheet" href="master.php">
     </head>
     <body>
         <div class="top">
-            <div class="logo">Over de <br>RHEIN</div>
-            <div class="title">title</div>
-            <button class="button" type="button" name="button">Bestand</button>
-            <button class="button" type="button" name="button">Info</button>
+            <div class="logo"><br>RHEIN</div>
+            <button type="button" name="button">bestand</button>
+            <button type="button" name="button">info</button>
+            <div class="title">Kabelchecklisten</div>
+            <nav>
+                <ul>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                </ul>
+            </nav>
         </div>
-        <div class="content">
+        <main class="content">
             <?php
                 $servername = "83.82.240.2";
                 $username = "akram";
@@ -43,7 +50,7 @@
                 echo "</table>";
                 mysqli_close($conn);
             ?>
-        </div>
-        <div class="exit">exit</div>
-    </body>
-</html>
+          </main>
+          <button type="button" class="exit" name="exit">exit</button>
+      </body>
+  </html>
