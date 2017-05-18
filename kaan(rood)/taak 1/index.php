@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+<<<<<<< HEAD
         <link rel="stylesheet" href="style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
         <title>Over de RHEIN</title>
@@ -14,6 +15,27 @@
             <button class="button" type="button" name="button">Info</button>
         </div>
         <div class="content">
+=======
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <title>Over de RHEIN</title>
+        <link rel="stylesheet" href="master.php">
+    </head>
+    <body>
+        <div class="top">
+            <div class="logo"><br>RHEIN</div>
+            <button type="button" name="button">bestand</button>
+            <button type="button" name="button">info</button>
+            <div class="title">Kabelchecklisten</div>
+            <nav>
+                <ul>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                </ul>
+            </nav>
+        </div>
+        <main class="content">
+>>>>>>> 3103268f1607a88e5a744c1680870823fa68728b
             <?php
                 $servername = "83.82.240.2";
                 $username = "akram";
@@ -43,7 +65,14 @@
                 echo "</table>";
                 mysqli_close($conn);
             ?>
+<<<<<<< HEAD
         </div>
         <div class="exit">exit</div>
     </body>
 </html>
+=======
+          </main>
+          <button type="button" class="exit" name="exit">exit</button>
+      </body>
+  </html>
+>>>>>>> 3103268f1607a88e5a744c1680870823fa68728b
