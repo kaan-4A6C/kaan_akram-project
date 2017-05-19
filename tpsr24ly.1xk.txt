@@ -1,0 +1,13 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is behind 'origin/master' by 4 commits, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+#	modified:   akram(groen)/taak 1/index.php
+#	modified:   akram(groen)/taak 1/style.css
+#	modified:   akram(groen)/taak 1/style.sass
+#
+

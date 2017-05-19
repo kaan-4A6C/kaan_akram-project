@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html,>
 <html>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-        <title>Over de RHEIN</title>
+        <title>Over de Rhein | Akram</title>
         <link rel="stylesheet" href="master.php">
     </head>
     <body>
@@ -13,14 +13,16 @@
             <button type="button" name="button">bestand</button>
             <button type="button" name="button">info</button>
             <div class="title">Kabelchecklisten</div>
-            <nav>
-                <ul>
-                    <a href="#"><li></li></a>
-                    <a href="#"><li></li></a>
-                </ul>
-            </nav>
         </div>
         <main class="content">
+
+          <select class="select" name="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+          </select>
+
           <?php
               $servername = "83.82.240.2";
               $username = "akram";
