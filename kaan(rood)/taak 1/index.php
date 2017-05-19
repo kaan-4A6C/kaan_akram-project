@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-        <title>Over de RHEIN</title>
+        <title>Over de RHEIN | Kagan</title>
     </head>
     <body>
         <div class="top">
@@ -14,8 +14,7 @@
             <button class="button" type="button" name="button">Info</button>
         </div>
         <div class="content">
-            <?php include 'function.php'; ?>
-
+            <?php include 'function.php';  ?>
             <form action="" method="post">
                 opdrachtnummer:
                 <select type="text" name="selectnummer">
@@ -28,9 +27,10 @@
                             echo "<option value='$selectnummer[opdrachtnummer]'>$selectnummer[opdrachtnummer]</option>";
                         }
                     }
+
                 ?>
                 </select>
-                <input type="submit" name="selecteerKenteken" value="selecteer">
+                <input type="submit" value="selecteer">
             </form>
             <div class="">
                 <?php
@@ -39,6 +39,7 @@
                     } else {
                         echo tableFromArray(getOpdrachten("SELECT * FROM Hijstesten_2 "));
                     }
+
                 ?>
             </div>
         </div>
