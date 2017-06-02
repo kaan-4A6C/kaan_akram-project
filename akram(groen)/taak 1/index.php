@@ -12,6 +12,8 @@
             <div class="title">Kabelchecklisten_3</div>
             <button class="button" type="button" name="button">Bestand</button>
             <button class="button" type="button" name="button">Info</button>
+            <button class="button" type="button" name="button"><a href="index.php">Kabelchecklisten_3</a></button>
+            <button class="button" type="button" name="button"><a href="kaan_akram-project\kaan(rood)\taak 1\index.php">Hijstesten_2</a></button>
         </div>
         <div class="content">
             <?php include 'function.php'; ?>
