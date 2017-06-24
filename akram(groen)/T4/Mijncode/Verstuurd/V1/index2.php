@@ -17,17 +17,18 @@
             <?php include 'function2.php'; ?>
             <form class="" action="index.html" method="post">
               <fieldset>
-                <legend>Onderwagen</legend>
+                <legend>Hijskraan</legend>
                 Fabrikaat: <input type="text" name="Fabrikaat"><br><br>
-                Model/Type: <input type="text" name="Model/Type"><br><br>
-                Identieficatienummer: <input type="text" name="Identieficatienummer"><br><br>
+                Model/Type: <input type="text" name="Model/Type:"><br><br>
+                Serienummer: <input type="text" name="Serienummer"><br><br>
                 Bedrijsnummer: <input type="text" name="Bedrijsnummer"><br><br>
+                Bouwjaar: <input type="text" name="Bouwjaar"><br><br>
                 <input type="submit" name="submit" value="submit">
               </fieldset>
             </form>
             <?php
             if (isset($_POST['submit'])) {
-                insert("83.82.240.2","akram","kaan","over_de_rhein_akram_kaan","INSERT INTO Onderwagen_6 (Onderwagen_identieficatienummer, Onderwagen_fabrikaat, Onderwagen_model_type,Onderwagen_bedrijfsnummer) VALUES ($_POST[Fabrikaat], $_POST[Model/Type],
+                insert("83.82.240.2","akram","kaan","over_de_rhein_akram_kaan","INSERT INTO Onderwagen_6 (Hijskraan_fabrikaat, Hijskraan_model_type, Hijskraan_serienummer,	Hijskraan_bedrijfsnummer) VALUES ($_POST[Fabrikaat], $_POST[Model/Type],
                   $_POST[Serienummer],$_POST[Bedrijsnummer]);");
               }
             ?>

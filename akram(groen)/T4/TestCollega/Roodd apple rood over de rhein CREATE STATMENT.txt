@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS Rood_Over_de Rhein_Kraan_Keuring_Tabel ;
+CREATE TABLE Rood_Over_de Rhein_Kraan_Keuring_Tabel (
+	naam varchar(20),
+	adres varchar(20),
+	postcode / plaats varchar(15),
+	telefoonnummer INT(10),
+	bedrijf varchar(15),
+	functionaris varchar(10) 
+);	
